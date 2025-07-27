@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from backend.openai_client import generate_cards_from_prompt, enrich_cards_with_code_or_formula_batch
-from backend.schema import PromptInput, Card
+from openai_client import generate_cards_from_prompt, enrich_cards_with_code_or_formula_batch
+from schema import PromptInput, Card
 from typing import List, Optional
 import uvicorn
 

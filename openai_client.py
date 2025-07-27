@@ -4,7 +4,7 @@ from openai import OpenAI
 from typing import List
 
 from pydantic import RootModel
-from backend.schema import Card, CardList, Code, CodeList, Formula, FormulaList
+from schema import Card, CardList, Code, CodeList, Formula, FormulaList
 import time
 
 def enrich_cards_with_code_or_formula_batch(
